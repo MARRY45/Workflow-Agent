@@ -14,7 +14,7 @@ format:
 	ruff format src tests examples
 
 typecheck:
-	mypy src
+	mypy src examples
 
 test:
 	pytest
