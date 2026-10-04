@@ -100,6 +100,10 @@ addopts = "-ra --strict-markers -m 'not live'"
 markers = [
     "live: talks to a real LLM provider (needs WORKFLOW_AGENT_LIVE_MODEL and provider API key)",
 ]
+filterwarnings = [
+    # Emitted by LiteLLM's own pydantic models on import; not actionable for us.
+    "ignore:.*ReadOnly.*:UserWarning",
+]
 
 [tool.coverage.run]
 source = ["workflow_agent"]
