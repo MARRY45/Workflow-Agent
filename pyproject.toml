@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling>=1.24"]
+requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
@@ -7,6 +7,8 @@ name = "workflow-agent"
 dynamic = ["version"]
 description = "Prototype agent architecture that automates multi-step technical research and code verification tasks."
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
 keywords = ["llm", "agent", "tool-calling", "asyncio", "litellm", "code-verification"]
 classifiers = [
@@ -48,7 +50,7 @@ path = "src/workflow_agent/_version.py"
 packages = ["src/workflow_agent"]
 
 [tool.hatch.build.targets.sdist]
-include = ["src", "tests", "docs", "examples", "README.md", "pyproject.toml"]
+include = ["src", "tests", "docs", "examples", "README.md", "LICENSE", "pyproject.toml"]
 
 # --------------------------------------------------------------------------- ruff
 [tool.ruff]

@@ -209,6 +209,10 @@ src/workflow_agent/
 └── cli.py
 ```
 
+## License
+
+[MIT](LICENSE)
+
 ## Türkçe özet
 
 **Workflow Agent**, çok adımlı teknik araştırma ve kod doğrulama görevlerini otomatikleştiren
