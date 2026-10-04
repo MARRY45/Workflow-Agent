@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "workflow-agent"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Prototype agent architecture that automates multi-step technical research and code verification tasks."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -40,6 +40,9 @@ dev = [
 
 [project.scripts]
 workflow-agent = "workflow_agent.cli:main"
+
+[tool.hatch.version]
+path = "src/workflow_agent/_version.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/workflow_agent"]

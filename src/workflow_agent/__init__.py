@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from workflow_agent._version import __version__
 from workflow_agent.config import Settings
 from workflow_agent.errors import (
     BudgetExceededError,
@@ -13,8 +14,6 @@ from workflow_agent.errors import (
     WorkflowAgentError,
     WorkspaceError,
 )
-
-__version__ = "0.1.0"
 
 __all__ = [
     "BudgetExceededError",
